@@ -1,0 +1,589 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", system-ui;
+  font-weight: 500;
+  margin: 0;
+   padding: 0; 
+}
+
+.nav{
+    width: 100%;
+    height: 80px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav ul{
+    display: flex;
+    list-style-type: none;
+    gap: 35px;
+}
+
+.nav ul li{
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav ul svg{
+    width: 20px;
+}
+
+.adImage{
+    height: 85vh;
+    width: 100%;
+    /* background-color: firebrick; */
+    background-image: url("https://themewagon.github.io/famms/images/slider-bg.jpg");
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-position: 50% 10%;
+    overflow: hidden;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+.adImageDesc{
+    margin-left: 100px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.adImageDesc h1{
+    font-weight: bold;
+    font-size: 72px;
+}
+
+.button1{
+    padding: 16px;
+    width: 150px;
+    background-color:#f7444e;
+    border: none;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.whyUs{
+    width: 100%;
+    height: 60vh;
+}
+
+.whyUsDiv{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    align-items: center;
+}
+
+.whyUsDiv .first, .second, .third{
+    width: 22vw;
+    height: 270px;
+    background-color: #002c3e;
+    border-radius: 8px;
+}
+
+.whyUsDiv svg{
+    filter: invert();
+    height: 60px;
+    width: 70px;
+}
+
+.first{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.first h2{
+    color: white;
+    font-weight: bold;
+}
+
+.first span{
+    color: white;
+    text-align: center;
+}
+
+.second{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.second h2{
+    color: white;
+    font-weight: bold;
+}
+
+.second span{
+    color: white;
+    text-align: center;
+}   
+
+.third{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.third h2{
+    color: white;
+    font-weight: bold;
+}
+
+.third span{
+    color: white;
+    text-align: center;
+}   
+
+.adImage2{
+   width: 100%;
+   height: 50vh;
+   background-color: #d4ced0;
+   background-image: url("https://themewagon.github.io/famms/images/arrival-bg.png");
+    background-size: contain; /* Ensures the image covers the entire background */
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-position: 15% 10%;
+    overflow: hidden;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.adImage2Desc{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    width: 40%;
+    margin-left: 600px;
+    gap: 25px;
+}
+
+.adImage2Desc button{
+    padding: 16px;
+    width: 150px;
+    background-color:#f7444e;
+    border: none;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+
+    &:hover{
+        color: #f7444e ;
+        background-color: wheat;
+    }
+}
+
+.ourProducts{
+    margin-top: 30px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ourProducts h1{
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.mainLine{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+
+.productsGallery{
+    width: 100%;
+    height: 170vh;
+    /* background-color: red;    */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.productsGallery .firstSec, .secondSec, .thirdSec, .fourthSec{
+    width: 80%;
+    height: 40vh;
+    /* background-color: green; */
+}
+
+.firstItem, .secondItem, .thirdItem{
+    height: 37vh;
+    width: 25%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+     /* width: 200px;
+    height: 200px; */
+    /* background-color: white; */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
+
+    
+}
+
+.firstSec, .secondSec, .thirdSec, .fourthSec{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.firstItemImage{
+    height: 29vh;
+    width: 90%;
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.firstItemPrice{
+    height: 6vh;
+    width: 90%;
+    /* background-color: chartreuse; */
+}
+
+.firstItemImage img{
+    width: 160px;
+    transition: transform 0.3s ease;
+
+    &:hover{
+        transform: scale(1.1); 
+    }
+}
+
+.firstItemPrice{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.firstItemPrice span{
+    font-weight: bold;
+}
+
+.firstItemImage .buttons {
+    position: absolute;
+    bottom: -90px; /* Hide the buttons initially below the container */
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: bottom 0.3s ease; 
+    height: 50px;
+    /* Smooth transition effect for buttons */
+}
+
+.firstItemImage:hover .buttons {
+    bottom: 30px; /* Slide up the buttons when hovering over the container */
+}
+
+.specialColor{
+    background-color: #f7444e;
+}
+
+.specialColor1{
+    background-color: black;
+}
+
+.firstItemImage button {
+    padding: 8px 44px;
+    /* background-color: #000000; */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 24px;
+    opacity: 1;
+    /* transition: opacity 0.3s ease; */
+    transition: background-color 0.6s ease, color 0.3s ease;    
+}
+
+.button:hover {
+    background-color: transparent; /* Background becomes transparent */
+    color: black; /* Text color changes to black */
+    opacity: 1; /* Slightly more opaque on hover */
+}
+
+
+.hoverEffect:hover{
+    background-color: rgba(255, 222, 173, 0);
+    color: black;
+    border: 0.5px solid black;
+}
+
+.allProducts{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.allProducts button{
+    padding: 8px 44px;
+    border-radius: 10px;
+    border: none;
+    background-color: #f7444e;
+    color: white;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.hoverEffect1:hover{
+    background-color: rgba(255, 222, 173, 0);
+    color: black;
+    border: 0.5px solid black;
+}
+
+.subscribe{
+    height: 300px;
+    width: 100%;
+    background-color: #d4ced0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.subscribe input{
+    width: 700px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    padding-left: 30px;
+}
+
+input::placeholder{
+    margin-left: 30px;
+    font-size: 16px;
+}
+
+.subscribe button{
+    padding: 12px 54px;
+    border-radius: 30px;
+    border: none;
+    background-color: #f7444e;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.reviews{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.customer{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.customer img{
+    width: 140px;
+    border-radius: 50%;
+}
+
+.imageContainer{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .firstPart, .secondPart, .thirdPart, .fourthPart{
+    width: 22%;
+    height: 450px;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+}
+/* 
+.firstPart{
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+}
+.secondPart{
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+} */
+
+.secondPart ul{
+    list-style-type: none;
+    align-items: center;
+}
+
+.secondPart ul li, .thirdPart ul li {
+    margin-top: 10px;
+}
+
+.thirdPart ul{
+    list-style-type: none;
+    align-items: center;
+}
+
+.toCenter{
+    width: 100%;
+    height: 100%;
+    /* background-color: #f7444e; */
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+}
+
+.hardCenter{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 70%;
+}
+
+.hardCenter input{
+    width: 65%;
+    height: 49.5px;
+    padding-left: 20px;
+    border: 1px solid black;
+    border-right: none;
+}
+
+
+
+.hardCenter button{
+    width: 35%;
+    height: 51px;
+    background-color: #f7444e;
+    border: 1px solid black;
+    border: none;
+    color: white;
+}
+
+.lastFooter{
+    height: 100px;
+    width: 100%;
+    background-color: #002c3e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+button{
+    cursor: pointer;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 90vh; /* Full screen height */
+    overflow: hidden;
+}
+
+.carousel-inner {
+    height: 100%;
+    display: flex;
+}
+
+.adImage{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+}
+
+.adImage.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+.adImageDesc {
+    position: absolute;
+    bottom: 170px;
+    left: 30px;
+    /* color: white; */
+    /* background: rgba(0, 0, 0, 0.5); */
+    /* padding: 20px; */
+    border-radius: 10px;
+}
+
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    border-radius: 50%;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+    display: flex;
+}   
+
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
